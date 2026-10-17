@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gallery — Malvern Nail, Melbourne</title>
+<meta name="description" content="A look inside Malvern Nail in Malvern, Melbourne — our space and our work.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="concept">Design concept</div>
+
+<div class="pillnav">
+  <a class="brand" href="index.html">Malvern <em>Nail</em></a>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a class="active" href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false"><i class="bi bi-list"></i></button>
+  <a class="btn small" href="tel:+61423654399">Call to Book</a>
+</div>
+
+<header class="masthead">
+  <div class="narrow">
+    <p class="eyebrow">Gallery</p>
+    <h1>The details we're known for.</h1>
+    <p class="lead">A calm, light-filled space — and the kind of finishing we're proud of.</p>
+  </div>
+</header>
+
+<section class="sec" style="padding-top:20px">
+  <div class="wrap">
+    <div class="egal">
+      <figure>
+        <img class="arch-t" src="images/hero.webp" alt="Malvern Nail salon interior">
+        <figcaption>The salon — calm, bright and welcoming</figcaption>
+      </figure>
+      <figure>
+        <img class="round-t" src="images/manicure.webp" alt="Manicure close-up">
+        <figcaption>Flawless finishes, every time</figcaption>
+      </figure>
+      <figure>
+        <img class="arch-t" src="images/nailart.webp" alt="Nail art detail">
+        <figcaption>Hand-painted nail art</figcaption>
+      </figure>
+      <figure>
+        <img class="round-t" src="images/detail.webp" alt="Polish collection">
+        <figcaption>A shade for every mood</figcaption>
+      </figure>
+    </div>
+    <p class="fineprint">Illustrative imagery for this design concept — final photography to feature the real salon and team.</p>
+    <div class="center" style="margin-top:56px"><a class="btn gold" href="tel:+61423654399">Book Your Appointment</a></div>
+  </div>
+</section>
+
+<footer class="site">
+  <div class="fbrand">Malvern <em>Nail</em></div>
+  <p style="color:var(--muted);font-size:15px">Malvern, Melbourne VIC</p>
+  <nav class="fnav">
+    <a href="index.html">Home</a><a href="services.html">Services</a>
+    <a href="gallery.html">Gallery</a><a href="contact.html">Contact</a>
+  </nav>
+  <a class="fphone" href="tel:+61423654399">0423 654 399</a>
+  <p class="copy">© 2026 Malvern Nail · Concept website design · <a href="https://m.facebook.com/Angela.de.nails" target="_blank" rel="noopener">Facebook</a></p>
+</footer>
+<script>
+(function(){
+  var btn=document.querySelector('.nav-toggle');
+  var bar=document.querySelector('.pillnav');
+  if(!btn||!bar)return;
+  var icon=btn.querySelector('i');
+  btn.addEventListener('click',function(){
+    var open=bar.classList.toggle('open');
+    btn.setAttribute('aria-expanded',open?'true':'false');
+    btn.setAttribute('aria-label',open?'Close menu':'Open menu');
+    if(icon)icon.className=open?'bi bi-x':'bi bi-list';
+  });
+})();
+</script>
+</body>
+</html>
